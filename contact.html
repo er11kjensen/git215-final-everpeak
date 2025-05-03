@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erik Jensen">
+    <meta name="description" content="Contact EverPeak Resort to begin planning your dream Swiss Alps escape. We’re here to help with all your questions and vacation needs.">
+    <title>EverPeak Resort</title>
+    <link rel="icon" href="images/favicon.ico" type="image/everpeak-logo">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html" class="logo-link">
+                <img src="images/everpeak-logo.png" alt="EverPeak Resort Logo" class="logo" width="100" height="100">
+                <span>EverPeak Resort</span>
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <section class="hero">
+            <h2 class="visually-hidden">Scenic Valley View</h2>
+            <img src="images/swiss-valley.jpg" alt="Green valley with a river in the middle along with snowy mountain peaks in the background." class="hero-image" width="1200" height="500">
+        </section>    
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <p class="required-note">Required fields marked with a <span class="required">*</span></p>
+                <img src="images/swiss-peak.jpg" alt="Snow-covered mountain peak in the Swiss Alps at EverPeak Resort." width="350" height="455">
+            </div>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+
+                <label for="full-name">Full Name<span class="required">*</span></label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number<span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+                <fieldset class="contact-method">
+                    <legend>Preferred Contact Method: <span class="required">*</span></legend>
+                    <div class="contact-method-options">
+                    
+                        <input type="radio" id="pref-email" name="contact-method" value="email" class="required">
+                        <label for="pref-email">Email</label>
+
+                        <input type="radio" id="pref-phone" name="contact-method" value="phone">
+                        <label for="pref-phone">Phone</label>
+                    </div>
+                </fieldset>
+
+                <label for="comments">Comments<span class="required">*</span></label>
+                <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+            
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 - EverPeak Resort</p>
+        <p>This site is for educational purposes only.</p>
+    </footer>
+</body>
+</html>
